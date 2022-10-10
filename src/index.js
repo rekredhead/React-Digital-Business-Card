@@ -1,20 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './style.css';
-import Header from './Header';
-import MainContent from './MainContent';
-import Footer from './Footer.js';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./app";
+import "./style.css"
 
-function CustomPage() {
-    return (
-        <div>
-            <Header />
-            <MainContent />
-            <Footer />
-        </div>
-    );
-}
+const root = document.getElementById("root");
 
-const root = document.getElementById('root');
-
-ReactDOM.render(<CustomPage />, root);
+ReactDOM.render(<App/>, root);
